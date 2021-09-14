@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+<h1>Bài 3</h1>
+<input type="text" id="soMot" placeholder="Nhập a vào đây">
+<input type="text" id="soHai" placeholder="Nhập b vào đây">
+<button onclick="multiplication()">Tính S = tích 2 số a và b</button>
+<h1 id="rs"> </h1>
+<br> <br>
+
+
+<h1>Bài 4 ý a</h1>
+<input style="width: 250px" type="text" id="canhHinhVuong" placeholder="Nhập chiều dài cạnh hình vuông">
+<button onclick="square()">Tính chu vi và diện tích hình vuông</button>
+<p id="p4a"></p>
+<br><br>
+
+
+<h1>Bài 4 ý b</h1>
+<input type="text" placeholder="Nhập vào số a" id="soA">
+<input type="text" placeholder="Nhập vào số b" id="soB">
+<button onclick="binhPhuong()">Tính a^2 và a^b</button>
+<p id="p4b"></p>
+<br><br>
+
+<h1>Bài 4 ý c</h1>
+<input type="text" placeholder="Nhập vào số đầu" id="soDau">
+<input type="text" placeholder="Nhập vào số cuối" id="soCuoi">
+<button onclick="tinhTong()">Tính tổng</button>
+<p id="p4c"></p>
+</body>
+<script>
+// Bài 1 : Câu lệnh để hiện thị 1 hộp thoai là alert()
+// Cú pháp để hiển thị tên bạn lên hộp thoại :
+// alert("Nguyễn Ngọc Khánh");
+
+// Bài 2 : Câu lệnh nhận giá trị từ hộp thoại là prompt()
+// Viết code nhận giá trị từ hộp thoại, hiển thị bình phương của số đó ra hộp thoại.
+// let number = +prompt("Điền số bất kì vào đây để tính bình phương")
+// alert("Kết quả là " + number**2)
+
+// Bài 3 :Câu lệnh nhận giá trị từ ô input là document.getElementById().value;
+// function multiplication(){
+//     let a = +document.getElementById("soMot").value;
+//     let b = +document.getElementById("soHai").value;
+//     let S = a*b;
+//     document.getElementById("rs").innerHTML= "Kết quả S = " +S;
+//
+// }
+
+// Bài 4 ý a
+// function square(){
+//     let canh = +document.getElementById("canhHinhVuong").value;
+//     let P = canh*4;
+//     let S = canh**2;
+//     document.getElementById("pa").innerHTML = " Chu vi của hình vuông bằng " + P + "<br>" + "Diện tích của hình vuông bằng " +S;
+//
+// }
+
+
+// Bài 4 ý b
+// function binhPhuong(){
+//     let a = +document.getElementById("soA").value;
+//     let b = +document.getElementById("soB").value;
+//     let c = a**2;
+//     let d = a**b;
+//     document.getElementById("p4b").innerHTML= "Kết quả a^2 = " + c + "  ; a^b = " + d;
+//
+// }
+
+
+// Bài 4 ý c
+// function tinhTong(){
+//     let soDau = +document.getElementById("soDau").value;
+//     let soCuoi = +document.getElementById("soCuoi").value;
+//     let soHang = (soCuoi - soDau) + 1;
+//     let tongDay = (soDau +soCuoi)*soHang/2;
+//     if (soCuoi > soDau) {
+//         document.getElementById("p4c").innerHTML = "Tổng của dãy số là " + tongDay;
+//     } else {
+//         document.getElementById("p4c").innerHTML = "Dãy số không hợp lệ";
+//     }
+// }
+
+
+
+// // Bài 4 ý d : Nhập vào năm in ra thế kỷ
+// let year = +prompt("Điền số năm muốn biết thế kỷ vào đây")
+// let century = parseInt(year/100) + 1;
+// alert(century);
+
+
+
+</script>
+</body>
+</html>
