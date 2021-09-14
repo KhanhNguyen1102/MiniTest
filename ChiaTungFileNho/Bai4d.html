@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài 4d</h1>
+<input type="text" id="year" placeholder="Nhập năm vào đây">
+<button onclick="check()">Check</button>
+<p id="rs"></p>
+</body>
+<script>
+  function check(){
+    let year = +document.getElementById("year").value;
+    let century = parseInt(year/100) + 1;
+    document.getElementById("rs").innerHTML = "Năm này thuộc thế kỷ " + century;
+  }
+
+</script>
+</html>
